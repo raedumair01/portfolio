@@ -1,0 +1,40 @@
+.creative-skills {
+    text-align: center; /* Centers the section title */
+    padding: 40px 20px; /* Adds some spacing around the section */
+  }
+  
+  .skills-cards {
+    display: flex; /* Flexbox for horizontal alignment */
+    justify-content: space-around; /* Evenly spaces the items horizontally */
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    margin-top: 20px;
+    gap: 20px; /* Adds some space between the cards */
+  }
+  
+  .skill-card {
+    background-color: #f4f4f4; /* Light background for the cards */
+    padding: 20px;
+    width: 300px; /* Sets the width for the cards */
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Adds shadow for a card effect */
+    text-align: center; /* Centers the content inside each card */
+    transition: transform 0.3s ease; /* Adds a hover effect */
+  }
+  
+  .skill-card:hover {
+    transform: translateY(-10px); /* Lift card slightly on hover */
+  }
+  
+  .skill-icon {
+    font-size: 50px;
+    color: #6c63ff; /* Color of the icons */
+    margin-bottom: 15px;
+  }
+  
+  @media (max-width: 768px) {
+    .skills-cards {
+      flex-direction: column; /* Stacks the cards vertically on smaller screens */
+      align-items: center;
+    }
+  }
+  

@@ -1,0 +1,26 @@
+.portfolio-section {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .portfolio-grid {
+    display: flex; /* Flexbox to align items in a row */
+    gap: 30px; /* Horizontal gap between images */
+    flex-wrap: wrap; /* Ensure images wrap on small screens */
+  }
+  
+  .portfolio-item {
+    flex-shrink: 0; /* Prevent shrinking of items */
+
+  }
+  
+  .portfolio-item img {
+    width: 370px; /* Fixed width for each image */
+    height: 700px; /* Fixed height for each image */
+    border-radius: 8px;
+  }
+  
+  .portfolio-item p {
+    margin-top: 10px; /* Space between image and text/caption */
+  }
+  

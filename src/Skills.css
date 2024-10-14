@@ -1,0 +1,26 @@
+.skills-section {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  
+  .skill-item {
+    text-align: center;
+  }
+  
+  .skill-item .icon {
+    font-size: 50px;
+    color: #61dafb;
+  }
+  
+  .skill-item p {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  

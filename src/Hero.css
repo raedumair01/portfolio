@@ -1,0 +1,543 @@
+/* General page styling */
+body,html {
+  margin: 0;
+  font-family: 'Jost', sans-serif;
+  background-color: #111A20;
+  color: #81F59B;
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Main content area */
+.main-content {
+  flex: 1; /* Take up remaining space between the navbar and footer */
+}
+/* Home Section */
+.home {
+  padding: 100px 50px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Header Section */
+.main-title {
+  font-weight: 700;
+  font-size: 48px;
+  background: linear-gradient(180deg, #B0FBBC 0%, #82F9A1 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+
+.sub-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 700px;
+  margin-bottom: 40px;
+  color: #C9E2F0;
+}
+
+.sub-title a {
+  color: #81F59B;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.sub-title a:hover {
+  text-decoration: underline;
+}
+
+/* Latest Articles Section */
+.latest-articles {
+  margin-bottom: 60px;
+}
+
+.latest-articles h2 {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.article {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.article-info {
+  display: flex;
+  align-items: center;
+}
+
+.article-icon {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #81F59B;
+}
+
+.article-date {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.all-articles {
+  text-align: right;
+  margin-top: -40px;
+  margin-right: 10px;
+}
+
+.all-articles a {
+  color: #C9E2F0;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.all-articles a:hover {
+  text-decoration: underline;
+}
+
+/* Projects Section */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.project {
+  background-color: #1C2C35;
+  border-radius: 8px;
+  padding: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.side-highlight {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  border-radius: 8px 0 0 8px;
+}
+
+.side-highlight-green {
+  background-color: #81F59B;
+}
+
+.side-highlight-red {
+  background-color: #D9534D;
+}
+
+.side-highlight-purple {
+  background-color: #CCA9F4;
+}
+
+.project-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.project-description {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #C9E2F0;
+}
+
+.project-button {
+  width: 100px;
+  padding: 10px 0;
+  background: none;
+  border: 2px solid rgba(124, 201, 255, 0.41);
+  color: #ECF8FF;
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.project-button:hover {
+  background-color: rgba(124, 201, 255, 0.1);
+}
+
+/* Chat Section */
+.chat-section {
+  margin: 100px 0;
+  text-align: center;
+}
+
+.chat-section h2 {
+  font-size: 36px;
+  background: linear-gradient(180deg, #B0FBBC 0%, #82F9A1 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+
+.chat-section p {
+  font-size: 18px;
+  color: #C9E2F0;
+  margin-bottom: 40px;
+}
+
+.chat-button {
+  background-color: #81F59B;
+  color: #111A20;
+  padding: 10px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.chat-button:hover {
+  background-color: #6be089;
+}
+
+/* Footer */
+
+
+
+@keyframes fadeInFooter {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Footer link hover effect */
+
+/* Footer */
+
+.footer-contact {
+  display: flex; /* Flex container for contact items */
+  justify-content: center; /* Center contact items */
+  align-items: center; /* Center items vertically */
+  gap: 50px; /* Space between contact items */
+  margin-top: 10px; /* Margin above contact items */
+}
+
+.footer-item {
+  display: flex; /* Flex container for icon and text */
+  position: relative;
+  left:-700px;
+  justify-content: space-between;
+
+}
+.footer-item1 {
+  display: flex; /* Flex container for icon and text */
+  position: relative;
+  left:-680px;
+  justify-content: space-between;
+
+}
+
+.footer-contact-text {
+  color: #B8C1C7; /* Color for contact text */
+  position: relative;
+  right:-230px
+
+}
+
+.footer-contact-text1 {
+  color: #B8C1C7; /* Color for contact text */
+  position: relative;
+  right:-80px
+}
+.footer-button-icon1{
+  font-size: 24px; /* Adjust the size */
+  color: #81F59B; /* Icon color */
+  transition: color 0.3s ease; /* Smooth color transition */
+  margin-right: -1200px;
+  position: relative;
+  left:-55px
+}
+.footer-button-icon2{
+  font-size: 24px; /* Adjust the size */
+  color: #81F59B; /* Icon color */
+  transition: color 0.3s ease; /* Smooth color transition */
+  margin-right: -2000px;
+  position: relative;
+  left:32px
+}
+.footer {
+  background-color: #1C2C35; /* Dark background for footer */
+  padding: 30px; /* Padding around footer */
+  text-align: center; /* Centered text */
+  font-size: 16px; /* Font size for footer text */
+  color: #B8C1C7; /* Footer text color */
+  opacity: 0; /* Start hidden for animation */
+  transform: translateY(100%); /* Position off screen for animation */
+  animation: fadeInFooter 1.5s forwards; /* Fade-in animation */
+  display: flex; /* Use flex for layout */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  width: 120%; /* Full width */
+  max-width: 1200px; /* Max width for the footer content */
+  margin: 0 auto; /* Center footer horizontally */
+  margin-left: -5%;
+  position: relative;
+  bottom: -100px;
+  
+}
+
+/* Footer container for additional content */
+.footer-container {
+  display: flex; /* Flex container for alignment */
+  gap: 20px; /* Space between items */
+  flex-direction: row; /* Stack items horizontally */
+  justify-content: center; /* Center the container items */
+  align-items: center; /* Center items vertically */
+  position: relative;
+  
+}
+
+/* Footer buttons */
+.footer-buttons {
+  display: flex; /* Flex container for buttons */
+  justify-content: center; /* Center buttons horizontally */
+  align-items: center; /* Center buttons vertically */
+  gap: 20px; /* Space between butt
+  ons 
+  */
+  
+}
+.footer-logo{
+
+}
+/* Footer button styles */
+.footer-button {
+  background-color: transparent; /* No background color */
+  border: none; /* Remove border */
+  cursor: pointer; /* Pointer cursor on hover */
+  display: flex; /* Align icon in center */
+  justify-content: center; /* Center icon horizontally */
+  align-items: center; /* Center icon vertically */
+
+}
+
+/* Footer button icon styles */
+.footer-button-icon {
+  font-size: 24px; /* Adjust the size */
+  color: #81F59B; /* Icon color */
+  transition: color 0.3s ease; /* Smooth color transition */
+  margin-right: -1200px;
+  position: relative;
+  left:150px
+}
+
+.footer-button:hover .footer-button-icon {
+  color: #82F9A1; /* Change color on hover */
+}
+
+/* Footer links */
+.footer a {
+  color: #81F59B; /* Green color for footer links */
+  text-decoration: none; /* Remove underline */
+  margin-left: 10px; /* Space between links */
+  transition: color 0.3s ease; /* Transition for smooth color change */
+}
+
+.footer a:hover {
+  color: #82F9A1; /* Change link color on hover */
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Footer text styling */
+.footer-text {
+
+  color: #C9E2F0; /* Light text color for better visibility */
+  text-align: center;
+  left:60px;
+  position: relative;
+  bottom:-5px
+}
+
+/* Heart and Vector styling */
+.heart {
+  position: absolute;
+  left: 0%;
+  top: 24.24%;
+  width: 30px;
+  height: 30px;
+  background-color: #82F9A1;
+}
+
+.vector {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  background-color: #E73E3E;
+}
+
+/* Navbar styling */
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #1C2C35;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  left: 0;
+  transition: transform 0.5s ease-in-out; /* Transition for smooth appearance */
+}
+
+.navbar.show {
+  transform: translateY(0); /* Shows the navbar */
+}
+
+.navbar.hide {
+  transform: translateY(-100%); /* Hides the navbar when scrolled */
+}
+
+/* Adjust title alignment */
+.nav-title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #ECF8FF;
+  margin-left: 20px;
+}
+
+/* Adjust links */
+.nav-left {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  font-weight: 500;
+  font-size: 16px;
+  color: #ECF8FF;
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.nav-link:hover {
+  color: #82F9A1; /* Change link color on hover */
+}
+
+.contact-link {
+  border: 2px solid rgba(124, 201, 255, 0.41);
+  border-radius: 8px;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-link:hover {
+  background-color: rgba(124, 201, 255, 0.1);
+  color: #81F59B;
+}
+
+/* Responsive navbar for smaller screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    transform: translateY(-100%);
+    transition: transform 0.5s ease-in-out; /* Slide-in effect for mobile */
+  }
+
+  .navbar.show {
+    transform: translateY(0); /* Navbar slides in when opened */
+  }
+
+  .nav-right {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .nav-link {
+    padding: 15px;
+  }
+}
+
+
+/* Responsive navbar for smaller screens */
+
+/* Heart and Vector styling */
+
+/* Profile Image Styling */
+.image-frame {
+  position: absolute;
+  top: 120px;
+  right: 100px;
+  width: 230px;
+  height: 220px;
+  border: 5px solid #82F9A1;
+  border-radius: 120px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.framed-image {
+  width: 230px;
+  height: 220px;
+  display: block;
+  border-radius: 120px;
+}
+
+/* Creative Skills Section */
+.creative-skills {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.skills-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  gap: 20px;
+  color: #C9E2F0;
+
+}
+
+.skill-card {
+  background-color: #1c2b36;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+}
+
+.skill-icon {
+  font-size: 50px;
+  color: #82F9A1;
+  margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .skills-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}

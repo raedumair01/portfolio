@@ -1,0 +1,68 @@
+/* Navbar after scroll */
+.navbar {
+  position: absolute;
+  width: 1920px;
+  height: 66px;
+}
+
+/* Rectangle 59 */
+.rectangle59 {
+  position: absolute;
+  width: 1920px;
+  height: 66px;
+  background: #0B0B0B;
+}
+
+/* Group 1 */
+.group1 {
+  position: absolute;
+  width: 637px;
+  height: 46px;
+  display: flex; /* Added for horizontal alignment */
+  align-items: center; /* Centering items vertically */
+  gap: 20px; /* Adjusts spacing between items */
+}
+
+/* Rectangle 4 */
+.rectangle4 {
+  box-sizing: border-box;
+  position: absolute;
+  width: 147px;
+  height: 46px;
+  background: #FFFFFF;
+  border: 4px solid #FFFFFF;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center text vertically */
+}
+
+/* Common styles for text items */
+.contact-me,
+.portfolio,
+.about-me,
+.skills {
+  width: 147px;
+  height: 46px;
+  font-family: 'Montserrat', sans-serif; /* Include fallback */
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center text horizontally */
+}
+
+.contact-me {
+  color: #000000;
+  /* Additional positioning as needed */
+}
+
+.portfolio,
+.about-me,
+.skills {
+  color: #FFFFFF;
+  /* Additional positioning as needed */
+}
+
+/* You can add media queries here for responsiveness */
